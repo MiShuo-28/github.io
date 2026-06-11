@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>米硕 | 个人主页</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark">M</span>
+        <span>米硕</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#about">关于我</a>
+        <a href="#travel">旅行</a>
+        <a href="#hometown">家乡</a>
+        <a href="#food">美食</a>
+        <a href="#game">小游戏</a>
+        <a href="#work">作品</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/new/new-01.jpg" alt="寿县夜晚城墙与月亮" />
+        <div class="hero-collage" aria-hidden="true">
+          <img class="collage-img collage-a" src="assets/new/new-01.jpg" alt="" />
+          <img class="collage-img collage-b" src="assets/new/new-02.jpg" alt="" />
+          <img class="collage-img collage-c" src="assets/new/new-03.jpg" alt="" />
+          <img class="collage-img collage-d" src="assets/new/new-05.jpg" alt="" />
+          <img class="collage-img collage-e" src="assets/travel/travel-10.jpg" alt="" />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Data Science · Travel Collage · Shouxian</p>
+          <h1 id="hero-title">你好，我是米硕。</h1>
+          <p class="hero-copy">
+            来自安徽寿县，现在就读于昆明学院信息工程学院数据科学与大数据专业。这个主页像一本会动的旅行手账：有城市、家乡、美食、中秋，也有我正在做的项目。
+          </p>
+          <div class="hero-actions" aria-label="主要操作">
+            <a class="button primary" href="#travel">看旅行相册</a>
+            <a class="button secondary" href="#game">玩中秋小游戏</a>
+          </div>
+          <button class="mood-chip" id="moodButton" type="button">今日灵感：把远方写进代码里</button>
+        </div>
+        <div class="hero-orbit" aria-hidden="true">
+          <span class="orbit-card card-one">安徽寿县</span>
+          <span class="orbit-card card-two">数据科学</span>
+          <span class="orbit-card card-three">旅行记录</span>
+          <span class="orbit-card card-four">中秋晚会</span>
+        </div>
+        <div class="lantern-field" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">向下翻 · 看我的路线</div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>在数据和远方之间，慢慢搭建自己的世界</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              我叫米硕，学号 23110941030，来自安徽寿县。现在在昆明学院信息工程学院学习数据科学与大数据专业，正在持续训练 Python、机器学习、数据可视化和 Web 展示能力。
+            </p>
+            <p>
+              课业之外，我很喜欢旅游。去过厦门、南京、杭州、三亚、鄂尔多斯，也喜欢把途中看到的城市夜景、海边、古城和建筑拍下来。
+            </p>
+          </div>
+          <div class="profile-panel" aria-label="个人信息">
+            <div>
+              <span class="panel-label">学校</span>
+              <strong>昆明学院信息工程学院</strong>
+            </div>
+            <div>
+              <span class="panel-label">专业</span>
+              <strong>数据科学与大数据</strong>
+            </div>
+            <div>
+              <span class="panel-label">家乡</span>
+              <strong>安徽寿县</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="travel" class="section travel-section">
+        <div class="section-heading">
+          <p class="eyebrow">Travel Album</p>
+          <h2>我的旅行足迹</h2>
+          <p>海边、古城、夜景和路上的风，都放进这个小相册里。</p>
+        </div>
+        <div class="route-map" aria-label="旅行城市">
+          <span class="route-line"></span>
+          <button class="route-node active" type="button" data-place="shouxian">寿县</button>
+          <button class="route-node" type="button" data-place="xiamen">厦门</button>
+          <button class="route-node" type="button" data-place="nanjing">南京</button>
+          <button class="route-node" type="button" data-place="hangzhou">杭州</button>
+          <button class="route-node" type="button" data-place="sanya">三亚</button>
+          <button class="route-node" type="button" data-place="eerduosi">鄂尔多斯</button>
+          <button class="route-node active" type="button" data-place="kunming">昆明</button>
+        </div>
+        <div class="map-explorer">
+          <div class="map-board" aria-label="可点击旅行地图">
+            <button class="map-pin pin-shouxian" type="button" data-place="shouxian">寿县</button>
+            <button class="map-pin pin-xiamen" type="button" data-place="xiamen">厦门</button>
+            <button class="map-pin pin-nanjing" type="button" data-place="nanjing">南京</button>
+            <button class="map-pin pin-hangzhou" type="button" data-place="hangzhou">杭州</button>
+            <button class="map-pin pin-sanya" type="button" data-place="sanya">三亚</button>
+            <button class="map-pin pin-eerduosi" type="button" data-place="eerduosi">鄂尔多斯</button>
+            <button class="map-pin pin-kunming" type="button" data-place="kunming">昆明</button>
+          </div>
+          <article class="map-info" id="mapInfo">
+            <span class="card-tag">点击地图上的地点</span>
+            <h3>从寿县出发</h3>
+            <p>点击一个城市，会看到这段旅行的关键词和对应照片。</p>
+            <img src="assets/new/new-01.jpg" alt="寿县夜景" />
+          </article>
+        </div>
+        <div class="travel-grid">
+          <figure class="travel-card wide">
+            <img src="assets/travel/travel-01.jpg" alt="三亚海边日光与礁石" />
+            <figcaption>三亚 · 海边日光</figcaption>
+          </figure>
+          <figure class="travel-card">
+            <img src="assets/travel/travel-02.jpg" alt="水下浮潜旅行照片" />
+            <figcaption>三亚 · 浮潜</figcaption>
+          </figure>
+          <figure class="travel-card">
+            <img src="assets/travel/travel-03.jpg" alt="蓝色海面与岩石海岸" />
+            <figcaption>海岸线 · 蓝色记忆</figcaption>
+          </figure>
+          <figure class="travel-card">
+            <img src="assets/travel/travel-06.jpg" alt="南京城墙下的旅行照片" />
+            <figcaption>南京 · 城墙与街头</figcaption>
+          </figure>
+          <figure class="travel-card">
+            <img src="assets/travel/travel-15.jpg" alt="杭州西湖远眺照片" />
+            <figcaption>杭州 · 西湖远眺</figcaption>
+          </figure>
+          <figure class="travel-card wide">
+            <img src="assets/travel/eerduosi-desert.jpg" alt="鄂尔多斯沙漠与骆驼队" />
+            <figcaption>鄂尔多斯 · 沙漠与驼队</figcaption>
+          </figure>
+        </div>
+        <div class="lightbox" id="travelLightbox" aria-hidden="true">
+          <button class="lightbox-close" type="button" aria-label="关闭图片预览">×</button>
+          <img alt="" />
+          <p></p>
+        </div>
+      </section>
+
+      <section id="hometown" class="section hometown-section">
+        <div class="section-heading">
+          <p class="eyebrow">Hometown</p>
+          <h2>我的家乡：安徽寿县</h2>
+        </div>
+        <div class="hometown-layout">
+          <div class="hometown-copy">
+            <p>
+              寿县古称寿春、寿阳、寿州，位于淮河中游南岸，是国务院公布的第二批国家历史文化名城。这里有楚文化积淀、淝水之战记忆，也有“豆腐发祥地”的烟火气。
+            </p>
+            <p>
+              寿县古城墙为宋代重筑，周长约 7147 米，四门设瓮城，兼具军事防御和防洪功能。走在城墙边，会觉得这座城不是只停在书本里，而是还在继续生活。
+            </p>
+            <p>
+              公开信息显示，2026 年央视中秋晚会举办地为安徽淮南。寿县作为淮南重要的历史文化名片，我想把“寿州古城 + 明月 + 团圆”的感觉放进主页里。中秋节在 2026 年 9 月 25 日，刚好适合把家乡文化、灯火和团圆写进这个网页。
+            </p>
+          </div>
+          <div class="hometown-stats">
+            <div><strong>3000+</strong><span>多年文明史</span></div>
+            <div><strong>7147m</strong><span>寿县古城墙周长约数</span></div>
+            <div><strong>4A</strong><span>寿州古城景区</span></div>
+          </div>
+        </div>
+        <div class="countdown-panel" aria-label="中秋倒计时">
+          <div>
+            <span class="panel-label">距离 2026 年中秋节</span>
+            <strong id="countdownText">计算中</strong>
+          </div>
+          <p>把晚会、灯火、月亮和家乡记忆，提前放进这个页面里。</p>
+        </div>
+        <div class="hometown-facts">
+          <article>
+            <span>01</span>
+            <h3>寿州古城</h3>
+            <p>城墙、城门、护城河共同构成一座仍在呼吸的古城。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>八公山豆腐</h3>
+            <p>关于豆腐起源的故事，让家乡有了很特别的烟火味。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>中秋晚会</h3>
+            <p>古城遇见明月，是最适合把家乡讲给大家听的时刻。</p>
+          </article>
+        </div>
+        <div class="hometown-gallery">
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Tongfei_Gate%2C_Shou_County.jpg" alt="寿县城墙通淝门" />
+            <figcaption>寿县城墙通淝门 · 图源 Wikimedia Commons</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Shou_County_City_Wall_Gate.jpg" alt="寿县古城门" />
+            <figcaption>寿县古城门 · 图源 Wikimedia Commons</figcaption>
+          </figure>
+          <div class="moon-card">
+            <span class="moon-shape"></span>
+            <h3>寿州中秋晚会</h3>
+            <p>愿明月照古城，灯火照归人。这里先做成预告区，后面可以换成晚会海报、节目单或现场照片。</p>
+          </div>
+        </div>
+        <p class="source-note">
+          家乡介绍参考寿县人民政府公开资料、人民网安徽关于 2026 年央视中秋晚会落地淮南的报道；家乡图片来自 Wikimedia Commons：Whisper of the heart《Tongfei Gate, Shou County.jpg》、超越宝宝《Shou County City Wall Gate.jpg》，按 CC BY-SA 4.0 等许可使用。
+        </p>
+      </section>
+
+      <section id="food" class="section food-section">
+        <div class="section-heading">
+          <p class="eyebrow">Hometown Taste</p>
+          <h2>家乡美食，也要有姓名</h2>
+          <p>如果说古城是寿县的轮廓，那这些味道就是回家的入口。</p>
+        </div>
+        <div class="food-grid">
+          <article class="food-card">
+            <img src="assets/food/huainan-beef-soup.jpg" alt="淮南牛肉汤" />
+            <div>
+              <span class="card-tag">热气腾腾</span>
+              <h3>牛肉汤</h3>
+              <p>汤色浓、牛肉香，配上粉丝和千张，是皖北很有代表性的日常味道。</p>
+            </div>
+          </article>
+          <article class="food-card featured">
+            <img src="assets/food/dajiu-jia.png" alt="寿县大救驾点心" />
+            <div>
+              <span class="card-tag">寿县名点</span>
+              <h3>大救驾</h3>
+              <p>金黄酥香，名字里带着历史传说，是寿县很适合写进主页的特色小吃。</p>
+            </div>
+          </article>
+          <article class="food-card green-card">
+            <img src="assets/food/shouzhou-yuanzi.jpg" alt="寿州圆子，也叫绿豆圆子" />
+            <div>
+              <span class="card-tag">街头小吃</span>
+              <h3>绿豆圆子</h3>
+              <p>外层焦香、内里绵软，适合和牛肉汤一起出现，一口就是家乡烟火气。</p>
+            </div>
+          </article>
+        </div>
+        <p class="source-note">绿豆圆子图片参考淮南市人民政府“寿州圆子”公开资料。</p>
+      </section>
+
+      <section id="game" class="section game-section">
+        <div class="section-heading">
+          <p class="eyebrow">Mid-Autumn Game</p>
+          <h2>接月饼小游戏</h2>
+          <p>30 秒挑战模式，接住越多月饼，寿州中秋的气氛就越热闹。</p>
+        </div>
+        <div class="game-shell">
+          <div class="game-board">
+            <canvas id="mooncakeGame" width="760" height="420" aria-label="接月饼小游戏画布"></canvas>
+          </div>
+          <div class="game-panel">
+            <div class="score-row">
+              <span>得分</span>
+              <strong id="scoreValue">0</strong>
+            </div>
+            <div class="score-row">
+              <span>剩余时间</span>
+              <strong id="timeValue">30</strong>
+            </div>
+            <button class="button primary" id="startGame" type="button">开始游戏</button>
+            <button class="button secondary" id="resetGame" type="button">重新开始</button>
+            <p id="gameMessage">准备好之后点击开始，把寿州中秋的月饼都接住。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section work-section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>近期项目</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <span class="card-tag">数据分析</span>
+            <h3>股票行情数据挖掘与涨跌预测系统</h3>
+            <p>围绕行情数据获取、特征工程、模型训练、可视化报告和网页展示完成的一套综合项目。</p>
+          </article>
+          <article class="work-card">
+            <span class="card-tag">深度学习</span>
+            <h3>茶叶病害图像识别实验</h3>
+            <p>使用卷积神经网络处理图像分类任务，整理训练过程、评估指标和实验报告。</p>
+          </article>
+          <article class="work-card">
+            <span class="card-tag">课程实践</span>
+            <h3>图像压缩与模型实验</h3>
+            <p>围绕 SVD、CNN、GAN 等方法完成实验代码、结果可视化和文档沉淀。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>技能方向</h2>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-top">
+              <span>Python 数据处理</span>
+              <span>88%</span>
+            </div>
+            <div class="skill-track"><span style="width: 88%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top">
+              <span>机器学习建模</span>
+              <span>82%</span>
+            </div>
+            <div class="skill-track"><span style="width: 82%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top">
+              <span>网页与可视化</span>
+              <span>76%</span>
+            </div>
+            <div class="skill-track"><span style="width: 76%"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>欢迎来聊项目、学习、旅行和家乡故事</h2>
+          <p>这里后续可以放邮箱、GitHub、微信二维码、简历下载入口，或者中秋晚会报名链接。</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:your-email@example.com">发送邮件</a>
+          <a class="button secondary" href="#top">回到顶部</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 米硕 · 23110941030</span>
+      <span>家乡资料来源：寿县人民政府、Wikimedia Commons</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
